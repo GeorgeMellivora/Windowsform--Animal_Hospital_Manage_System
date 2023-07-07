@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E97CE6C-3EFD-4C09-9A62-F7E9C1210D77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MidProject</RootNamespace>
+    <AssemblyName>MidProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment.Designer.cs">
+      <DependentUpon>Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BreederDataMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BreederDataMaintenance.Designer.cs">
+      <DependentUpon>BreederDataMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="HumanResourceDataMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HumanResourceDataMaintenance.Designer.cs">
+      <DependentUpon>HumanResourceDataMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSingnIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSingnIn.Designer.cs">
+      <DependentUpon>FormSingnIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerInformation.Designer.cs">
+      <DependentUpon>ManagerInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnoseResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiagnoseResult.Designer.cs">
+      <DependentUpon>DiagnoseResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetApplianceInformationMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetApplianceInformationMaintenance.Designer.cs">
+      <DependentUpon>PetApplianceInformationMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetApplianceOrdersInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetApplianceOrdersInformation.Designer.cs">
+      <DependentUpon>PetApplianceOrdersInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetDataMaintance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetDataMaintance.Designer.cs">
+      <DependentUpon>PetDataMaintance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetHospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetHospital.Designer.cs">
+      <DependentUpon>PetHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceDataMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceDataMaintenance.Designer.cs">
+      <DependentUpon>ServiceDataMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Appointment.resx">
+      <DependentUpon>Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BreederDataMaintenance.resx">
+      <DependentUpon>BreederDataMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanResourceDataMaintenance.resx">
+      <DependentUpon>HumanResourceDataMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSingnIn.resx">
+      <DependentUpon>FormSingnIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerInformation.resx">
+      <DependentUpon>ManagerInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiagnoseResult.resx">
+      <DependentUpon>DiagnoseResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetApplianceInformationMaintenance.resx">
+      <DependentUpon>PetApplianceInformationMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetApplianceOrdersInformation.resx">
+      <DependentUpon>PetApplianceOrdersInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetDataMaintance.resx">
+      <DependentUpon>PetDataMaintance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetHospital.resx">
+      <DependentUpon>PetHospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ServiceDataMaintenance.resx">
+      <DependentUpon>ServiceDataMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
